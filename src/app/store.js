@@ -9,15 +9,15 @@ const reducers = combineReducers({
   app: appSlice,
 });
 // config
-const persistCongif = {
+const persistConfig = {
   key: "root",
   storage,
 };
-const persistedReducer = persistReducer(persistCongif, reducers);
+
+const persistedReducer = persistReducer(persistConfig, reducers);
 
 const store = configureStore({
   reducer: persistedReducer,
-  devTools: process.env.NODE_ENV !== "production",
   middleware: [thunk],
 });
 export default store;
