@@ -1,18 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  item1: { item: "Button belom di klik" },
+  value: 0,
 };
 
 export const counterSlice = createSlice({
   name: "app",
   initialState,
   reducers: {
-    changeBtnOne: (state, action) => {
-      state.item1.item = action.payload;
+    counter: (state, action) => {
+      state.value = action.payload;
     },
   },
 });
-export const { changeBtnOne } = counterSlice.actions;
+export const { counter } = counterSlice.actions;
 
 export default counterSlice.reducer;
