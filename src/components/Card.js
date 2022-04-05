@@ -24,9 +24,6 @@ const Card = () => {
       }
     };
     data();
-    // return () => {
-    //   cleanup;
-    // };
   }, [zodiac]);
 
   const fnButtonInput = async (e) => {

@@ -1,10 +1,12 @@
 import React from "react";
-import Card from "./components/Card";
+import LoginButton from "./components/LoginButton";
+import LogOutButton from "./components/LogOutButton";
 
 const App = () => {
   return (
     <div className="container">
-      <Card />
+      <LoginButton />
+      <LogOutButton />
     </div>
   );
 };
