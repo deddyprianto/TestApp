@@ -1,14 +1,6 @@
 import React from "react";
-import LoginButton from "./components/LoginButton";
-import LogOutButton from "./components/LogOutButton";
+import Home from "./components/Home";
 
-const App = () => {
-  return (
-    <div className="container">
-      <LoginButton />
-      <LogOutButton />
-    </div>
-  );
-};
+const App = () => <Home />;
 
 export default App;
